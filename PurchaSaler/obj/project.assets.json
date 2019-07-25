@@ -12424,11 +12424,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CHEN\\Desktop\\Tutorial-dotnet\\PurchaSaler\\PurchaSaler.csproj",
+      "projectUniqueName": "C:\\Users\\CHEN\\Desktop\\Tutorial-dotnet\\PurchaSaler-Asp.Net-Core-2.2\\PurchaSaler\\PurchaSaler.csproj",
       "projectName": "PurchaSaler",
-      "projectPath": "C:\\Users\\CHEN\\Desktop\\Tutorial-dotnet\\PurchaSaler\\PurchaSaler.csproj",
+      "projectPath": "C:\\Users\\CHEN\\Desktop\\Tutorial-dotnet\\PurchaSaler-Asp.Net-Core-2.2\\PurchaSaler\\PurchaSaler.csproj",
       "packagesPath": "C:\\Users\\CHEN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CHEN\\Desktop\\Tutorial-dotnet\\PurchaSaler\\obj\\",
+      "outputPath": "C:\\Users\\CHEN\\Desktop\\Tutorial-dotnet\\PurchaSaler-Asp.Net-Core-2.2\\PurchaSaler\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
