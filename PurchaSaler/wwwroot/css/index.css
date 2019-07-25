@@ -1,0 +1,212 @@
+
+.header {
+    height: 400px;
+    background-color: #ffdc61;
+    width: 100%;
+    display: block;
+}
+
+.header .header-content {
+    margin: 0 150px 0 150px;
+    background: url(/images/site-img/bg_header.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.navbar-wrap {
+    padding-top: 30px;
+}
+
+.funbo {
+    text-align: center;
+}
+
+.funbo a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 40px 0 40px
+}
+
+.area-usercard {
+    border-radius: 10px;
+    margin-top: 90px;
+    width: 370px;
+    height: 225px;
+    background: #F9F2F2;
+    float: right;
+    text-align: center
+}
+/*登录前的1头像显示及操作*/
+.avatar_unlogin {
+    width: 70px;
+    height: 70px;
+    margin: 46px 150px 18px 150px;
+}
+
+.loginbt {
+    background-color: #ffbb29;
+    padding: 12px
+}
+
+.loginbt:hover {
+    opacity: 0.6;
+    color: #fff;
+}
+
+/*登陆后的头像显示及操作显示*/
+.user-info {
+    margin-top: 30px;
+    margin-left: 30px;
+    height:60px;    
+}
+
+.user-info .avatar_logined {
+    width: 56px;
+    height: 56px;
+    float: left;
+    border-radius:50%;
+    margin-top: 2px;
+    margin-left: 2px;
+    display:block
+}
+
+.user-info .user {
+    float:left;
+    margin:14px 0 14px 40px; 
+    color: #222;
+    font-size: 18px;
+    font-family: PingFangSC-Semibold;
+    font-weight: 700;
+    display:inline-block;
+}
+
+.opera{
+    height:130px;
+}
+
+/*消除bootstrap栅格的边距*/
+.no-gap{
+    margin-left:0;
+    margin-right:0
+}
+
+.opera .img{
+    margin-top: 27px;
+    margin-bottom:10px;
+}
+
+.opera .item{
+    width:26px;
+    height:26px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.opera .name {
+    margin-bottom: 10px;
+}
+
+.opera .num {
+    margin-bottom: 10px;
+    font-family: PingFangSC-Semibold;
+    font-weight:700
+}
+
+.area-content {
+    margin: 0 150px 0 150px;
+}
+
+.ctrl-warp {
+    font-size: 20px;
+    margin-top: 30px;
+    height: 110px;
+    border-radius: 10px;
+    text-align: center;
+    background: #ffffff
+}
+
+.search-bar {
+    margin-top: 30px;
+    border: 0.5px solid #a9a9a9;
+}
+
+.search-bar input,
+.search-bar button {
+    display: block;
+    float: left;
+    padding: 10px;
+    outline: 0;
+    border-radius: 6px;
+}
+
+.search-bar input {
+    width: 80%;
+}
+
+.search-bar button {
+    width: 20%;
+    background: #ffbb29;
+    color: #fff;
+}
+
+.category {
+    height: 60px;
+    margin: 15px 0 15px 0;
+    border-radius: 5px;
+    background: #ffdc61;
+    font-size: 20px;
+    padding: 13px 0 10px 0;
+}
+
+.category a {
+    padding: 0 13px 0 13px;
+    text-decoration: none
+}
+
+.goods {
+}
+
+.goods .card {
+    width: 200px;
+    height: 330px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+.area-content .row {
+    margin-left: 0;
+    margin-right: 0
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px
+}
+
+.info .desc {
+    padding: 10px 15px 10px 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.info .price {
+    color: #ff4444;
+    padding: 0 15px 0 15px;
+}
+
+.info .saler {
+    padding: 0 15px 0 15px;
+}
+
+.info .saler img {
+    width: 20px;
+    height: 20px;
+}
+
+.info .saler .shopname {
+    float:right;
+}

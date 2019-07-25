@@ -1,0 +1,84 @@
+﻿@model IEnumerable<PurchaSaler.Models.Good>
+@section head{
+    <link href="/css/index.css" rel="stylesheet" />
+}
+
+<div class="header">
+    <div class="header-content">
+        <div class="navbar-wrap">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="navbar-brand" style="color:white"><h2>PurchaSaler</h2></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="funbo">
+                        <a href="/Home/index">首页</a>
+                        <a href="#">我的置闲</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @Html.Partial("_PartialAvatar")
+
+    </div>
+</div>
+
+<div class="area-content">
+    <div class="ctrl-warp">
+        <div class="row">
+            <div class="col-sm-8">
+                @using (Html.BeginForm())
+                {
+                    <div class="search-bar">
+                        <input type="text" placeholder="请输入关键字搜索" name="searchString" value=@ViewBag.CurrentFilter >
+                        <button type="submit">搜索</button>
+                    </div>
+                }
+                
+            </div>
+            <div class="col-sm-4">
+                <img src="/images/site-img/add.png" style="width:56px;height:56px" />
+                <p><a id="issue" href="/Good/AddGoods" style="text-decoration:none">发布置闲</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        @Html.ActionLink("生活百货", "Index", "Home", new { sortOrder=ViewBag.CategoryParm="生活百货", currentFilter=ViewBag.CurrentFilter }, new { @class = "item" })
+        @Html.ActionLink("手机数码", "Index", "Home", new { sortOrder = ViewBag.CategoryParm="手机数码", currentFilter=ViewBag.CurrentFilter }, new { @class = "item" })
+        @Html.ActionLink("书籍", "Index", "Home", new { sortOrder = ViewBag.CategoryParm="书籍", currentFilter=ViewBag.CurrentFilter }, new { @class = "item" })
+        @Html.ActionLink("男装", "Index", "Home", new { sortOrder = ViewBag.CategoryParm="男装", currentFilter=ViewBag.CurrentFilter }, new { @class = "item" })
+        @Html.ActionLink("女装", "Index", "Home", new { sortOrder=ViewBag.CategoryParm="女装", currentFilter=ViewBag.CurrentFilter }, new { @class = "item" })
+        @Html.ActionLink("服饰配件", "Index", "Home", new { sortOrder = ViewBag.CategoryParm="服饰配件", currentFilter=ViewBag.CurrentFilter }, new { @class = "item" })
+        @Html.ActionLink("电器", "Index", "Home", new { sortOrder = ViewBag.CategoryParm="电器", currentFilter=ViewBag.CurrentFilter }, new { @class = "item" })
+        @Html.ActionLink("美妆", "Index", "Home", new { sortOrder = ViewBag.CategoryParm="美妆", currentFilter=ViewBag.CurrentFilter }, new { @class = "item" })
+        @Html.ActionLink("游戏装备", "Index", "Home", new { sortOrder = ViewBag.CategoryParm="游戏装备", currentFilter=ViewBag.CurrentFilter }, new { @class = "item" })
+        @Html.ActionLink("游戏交易", "Index", "Home", new { sortOrder = ViewBag.CategoryParm="游戏交易", currentFilter=ViewBag.CurrentFilter  }, new { @class = "item" })
+        @Html.ActionLink("水果零食", "Index", "Home", new { sortOrder = ViewBag.CategoryParm="水果零食", currentFilter=ViewBag.CurrentFilter  }, new { @class = "item" })
+        
+    </div>
+    <div class="goods">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="card">
+                        <a href="@Url.Action("GoodsDetails","Mall",new { GoodId=item.GoodID})">
+                            <img src="@item.GoodPhoto" />
+                        </a>
+                        <div class="info">
+                            <div class="desc"><p>@item.GoodDescribe</p></div>
+                            <div class="price">
+                                <p>￥@item.Price</p>
+                            </div>
+                            <hr style="margin:5px 0 5px 0" />
+                            <div class="saler">
+                                <img src="item.Avatar" alt="头像" />
+                                <p class="user-name" style="display:inline">item.UserName</p>
+                                <a href="#" class="shopname" style="display:inline">item.ShopName</a>
+                            </div>
+                        </div>
+                </div>
+            }
+        </div>
+    </div>
