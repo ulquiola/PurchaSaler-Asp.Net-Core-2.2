@@ -1,5 +1,8 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PurchaSaler.Models;
 
@@ -7,14 +10,9 @@ namespace PurchaSaler.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly DBContext _db;
-        public HomeController(DBContext db)
-        {
-            _db=db;
-        }
         public IActionResult Index()
         {
-            return View(_db.Good.ToList());
+            return View();
         }
 
         public IActionResult Privacy()
