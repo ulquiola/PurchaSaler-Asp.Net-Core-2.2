@@ -1,0 +1,27 @@
+@model PurchaSaler.Models.Shops
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Register" enctype="multipart/form-data" >
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ShopName" class="control-label"></label>
+                <input asp-for="ShopName" class="form-control" />
+                <span asp-validation-for="ShopName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShopDescription" class="control-label"></label>
+                <input asp-for="ShopDescription" class="form-control" />
+                <span asp-validation-for="ShopDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShopPhoto" class="control-label"></label>
+                <input asp-for="ShopPhoto" type="file" name="formFile" required="" />
+                <span asp-validation-for="ShopPhoto" class="text-danger"></span>
+            </div>            
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

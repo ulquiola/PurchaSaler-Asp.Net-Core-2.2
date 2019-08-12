@@ -13285,11 +13285,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ulquiola/WorkSpace/PurchaSaler/PurchaSaler.csproj",
+      "projectUniqueName": "/home/ulquiola/WorkSpace/PurchaSaler-Asp.Net-Core-2.2/PurchaSaler/PurchaSaler.csproj",
       "projectName": "PurchaSaler",
-      "projectPath": "/home/ulquiola/WorkSpace/PurchaSaler/PurchaSaler.csproj",
+      "projectPath": "/home/ulquiola/WorkSpace/PurchaSaler-Asp.Net-Core-2.2/PurchaSaler/PurchaSaler.csproj",
       "packagesPath": "/home/ulquiola/.nuget/packages/",
-      "outputPath": "/home/ulquiola/WorkSpace/PurchaSaler/obj/",
+      "outputPath": "/home/ulquiola/WorkSpace/PurchaSaler-Asp.Net-Core-2.2/PurchaSaler/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

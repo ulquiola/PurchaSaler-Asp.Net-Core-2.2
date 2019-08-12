@@ -14,8 +14,17 @@ namespace PurchaSaler.Models
             : base(options)
         {
         }
+
+        // protected public override void OnModelCreating(ModelBuilder modelBuilder)
+        // {
+        //     modelBuilder.Entity<UserAddress>().HasKey(x=> new {
+        //         x.UserId,x.AddressId
+        //     });
+            
+        // }
         public new DbSet<User> Users { get; set; }
-        public DbSet<PurchaSaler.ViewModels.RegisterVM> UserVM { get; set; }
-        public DbSet<PurchaSaler.ViewModels.LoginVM> LoginVM { get; set; }
+        public DbSet<Shops> Shops { get; set; }
+        public DbSet<Address> Addresses { get; set;}
+        public DbSet<UserAddress> UserAddresses { get; set; }
     }
 }

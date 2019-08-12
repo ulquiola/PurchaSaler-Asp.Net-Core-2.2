@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PurchaSaler.Models;
 
 namespace PurchaSaler.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190811143213_UserAddress")]
+    partial class UserAddress
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -208,32 +210,6 @@ namespace PurchaSaler.Migrations
                     b.ToTable("Addresses");
                 });
 
-            modelBuilder.Entity("PurchaSaler.Models.Shops", b =>
-                {
-                    b.Property<int>("ShopID")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int?>("SalesTotal");
-
-                    b.Property<string>("ShopDescription");
-
-                    b.Property<string>("ShopName")
-                        .IsRequired();
-
-                    b.Property<string>("ShopPhoto");
-
-                    b.Property<string>("TopImage");
-
-                    b.Property<string>("UserID");
-
-                    b.HasKey("ShopID");
-
-                    b.HasIndex("UserID");
-
-                    b.ToTable("Shops");
-                });
-
             modelBuilder.Entity("PurchaSaler.Models.UserAddress", b =>
                 {
                     b.Property<int>("id")
@@ -307,13 +283,6 @@ namespace PurchaSaler.Migrations
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("PurchaSaler.Models.Shops", b =>
-                {
-                    b.HasOne("PurchaSaler.Models.User", "Users")
-                        .WithMany("Shops")
-                        .HasForeignKey("UserID");
                 });
 
             modelBuilder.Entity("PurchaSaler.Models.UserAddress", b =>

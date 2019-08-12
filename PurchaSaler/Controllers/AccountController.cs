@@ -43,7 +43,7 @@ namespace PurchaSaler.Controllers
         {
             string fileName=Guid.NewGuid()+ Path.GetExtension(formFile.FileName);
             //var filePath=Path.Combine(_hostingEnvironment.WebRootPath+"\\Files\\",fileName);//windows
-            var filePath=Path.Combine(_hostingEnvironment.WebRootPath+"//Files//",fileName);//linux
+            var filePath=Path.Combine(_hostingEnvironment.WebRootPath+"//Files//Avatar//",fileName);//linux
             if(formFile.Length>0)
             {
                 using(var stream =new FileStream(filePath,FileMode.Create))
@@ -57,12 +57,12 @@ namespace PurchaSaler.Controllers
                 var user = new User()
                 {
                     UserName = registerVM.UserName,
-                    PhotoPath ="/Files/" + fileName
+                    PhotoPath ="/Files/Avatar/" + fileName
                 };
                 var result = await _userManager.CreateAsync(user, registerVM.Password);
                 if(result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home", "");
+                    return RedirectToAction("Login");
                 }
             }
             return View(registerVM);

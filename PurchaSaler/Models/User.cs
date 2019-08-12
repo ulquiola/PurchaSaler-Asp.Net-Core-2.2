@@ -8,6 +8,15 @@ namespace PurchaSaler.Models
 {
     public class User:IdentityUser
     {
+
+        public User()
+        {
+            UserAddresses = new List<UserAddress>();
+        }
         public String PhotoPath { get; set; }
+
+        public List<UserAddress> UserAddresses { get; set; }
+        public List<Shops> Shops { get; set;}
+
     }
 }
