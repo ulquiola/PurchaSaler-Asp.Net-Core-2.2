@@ -15,14 +15,14 @@ namespace PurchaSaler.Controllers
     public class AccountController : Controller
     {
         private readonly ApplicationDbContext db;
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
         private readonly IHostingEnvironment _hostingEnvironment;
 
         public AccountController(
             ApplicationDbContext db,
-            UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager,
+            UserManager<User> userManager,
+            SignInManager<User> signInManager,
             IHostingEnvironment hostingEnvironment )
         {
             this.db = db;

@@ -16,7 +16,6 @@ namespace PurchaSaler.Models
         public String PhotoPath { get; set; }
 
         public List<UserAddress> UserAddresses { get; set; }
-        public List<Shops> Shops { get; set;}
 
     }
 }

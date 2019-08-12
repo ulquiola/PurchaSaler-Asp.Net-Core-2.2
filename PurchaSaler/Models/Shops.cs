@@ -9,8 +9,8 @@ namespace PurchaSaler.Models
         [Key]
         public int ShopID { get; set; }
 
-        [Required(ErrorMessage = "请输入商店名")]
-        [RegularExpression(@"^[\\u4e00-\u9fa5_a-zA-Z0-9-\\w]{1,12}$", ErrorMessage = "限12个字符")]
+        // [Required(ErrorMessage = "请输入商店名")]
+        // [RegularExpression(@"^[\\u4e00-\u9fa5_a-zA-Z0-9-\\w]{1,12}$", ErrorMessage = "限12个字符")]
         public string ShopName { get; set; }
         public string ShopDescription { get; set; }
         public Nullable<int> SalesTotal { get; set; }

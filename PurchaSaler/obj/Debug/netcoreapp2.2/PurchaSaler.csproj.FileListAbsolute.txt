@@ -101,3 +101,4 @@ C:/Users/CHEN/Desktop/new/PurchaSaler/obj/Debug/netcoreapp2.2/Razor/Views/Accoun
 /home/ulquiola/WorkSpace/PurchaSaler-Asp.Net-Core-2.2/PurchaSaler/obj/Debug/netcoreapp2.2/PurchaSaler.pdb
 /home/ulquiola/WorkSpace/PurchaSaler-Asp.Net-Core-2.2/PurchaSaler/obj/Debug/netcoreapp2.2/PurchaSaler.csproj.CopyComplete
 /home/ulquiola/WorkSpace/PurchaSaler-Asp.Net-Core-2.2/PurchaSaler/obj/Debug/netcoreapp2.2/Razor/Views/Mall/AddShop.g.cshtml.cs
+/home/ulquiola/WorkSpace/PurchaSaler-Asp.Net-Core-2.2/PurchaSaler/obj/Debug/netcoreapp2.2/Razor/Views/Mall/AddGood.g.cshtml.cs

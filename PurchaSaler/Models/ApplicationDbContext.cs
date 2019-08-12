@@ -24,6 +24,7 @@ namespace PurchaSaler.Models
         // }
         public new DbSet<User> Users { get; set; }
         public DbSet<Shops> Shops { get; set; }
+        public DbSet<Goods> Goods { get; set;}
         public DbSet<Address> Addresses { get; set;}
         public DbSet<UserAddress> UserAddresses { get; set; }
     }

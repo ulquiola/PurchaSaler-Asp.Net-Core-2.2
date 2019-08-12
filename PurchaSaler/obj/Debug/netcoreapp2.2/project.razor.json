@@ -2978,6 +2978,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views/Mall/AddGood.cshtml",
+      "TargetPath": "Views/Mall/AddGood.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views/Mall/AddShop.cshtml",
       "TargetPath": "Views/Mall/AddShop.cshtml",
       "FileKind": "mvc"
