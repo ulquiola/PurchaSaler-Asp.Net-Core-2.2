@@ -1,3 +1,4 @@
+using System.Data;
 using System.Runtime.InteropServices.ComTypes;
 using System.IO;
 using System;
@@ -8,6 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 using PurchaSaler.Models;
 using Microsoft.AspNetCore.Hosting;
 using System.Linq;
+using PurchaSaler.ViewModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace PurchaSaler.Controllers
 {
@@ -30,11 +33,25 @@ namespace PurchaSaler.Controllers
             this.signInManager = signInManager;
 
         }
-
+///
         public IActionResult Index()
-        {
-            return View();
+        {    
+            var data =(
+                from g in db.Goods
+                join s in db.Shops on  g.ShopID equals s.ShopID 
+                join u in db.Users on s.UserID equals u.Id 
+                select new IndexVM()
+                {
+                    GoodName=g.GoodsName,
+                    ShopName=s.ShopName,
+                    UserName=u.UserName
+                }
+            ).ToList();            
+            return View(data);
         }
+
+
+
 
         [HttpGet]
         public IActionResult AddShop()

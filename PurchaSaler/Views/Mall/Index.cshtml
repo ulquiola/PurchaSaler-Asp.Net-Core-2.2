@@ -1,0 +1,10 @@
+@model IEnumerable<PurchaSaler.ViewModels.IndexVM>
+
+<div>
+    @foreach (var item in Model)
+    {
+        <div>Gname : @item.GoodName</div>
+        <div>Sname : @item.ShopName</div>
+        <div>Uname : @item.UserName</div>
+    }
+</div>
