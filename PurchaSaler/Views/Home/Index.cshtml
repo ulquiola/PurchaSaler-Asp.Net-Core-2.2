@@ -4,7 +4,10 @@
     <div class="row">
         @foreach(var item in Model)
         {
-            
+            <img src="@item.GoodPath">
+            <p>@item.GoodName</p>
+            <p>@item.ShopName</p>
+            <p>@item.UserName</p>
         }
     </div>
 </div>

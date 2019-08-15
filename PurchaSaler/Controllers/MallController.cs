@@ -67,7 +67,7 @@ namespace PurchaSaler.Controllers
             {
                 using(var stream = new FileStream(filePath,FileMode.Create))
                 {
-                    await stream.CopyToAsync(stream);
+                    await formFile.CopyToAsync(stream);
                 }
             }
             if (signInManager.IsSignedIn(User))
@@ -105,7 +105,7 @@ namespace PurchaSaler.Controllers
             {
                 using(var stream = new FileStream(filePath,FileMode.Create))
                 {
-                    await stream.CopyToAsync(stream);
+                    await formFile.CopyToAsync(stream);
                 }
             }
             if(signInManager.IsSignedIn(User))
