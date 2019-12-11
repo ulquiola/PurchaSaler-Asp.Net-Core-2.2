@@ -1,6 +1,5 @@
 ## 各种数据库连接字符串
-<appSettings>
- 
+```
 　　<!--SQL Server-->
 　　<!--<add key="SQLString" value="Database=MyData;Data Source=NICKYAN-PC;User Id=sa;Password=123123;"/>
 　　<add key="DataDAL" value="RedGlovePermission.SQLServerDAL" />-->
@@ -17,4 +16,4 @@
 　　<add key="SQLString" value="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=RedGlovePermission.Web\DB\MyData.mdb;Persist Security Info=False"/>
 　　<add key="DataDAL" value="RedGlovePermission.OleDBDAL" />
  
-</appSettings>
+```
